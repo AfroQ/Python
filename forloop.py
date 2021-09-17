@@ -1,5 +1,3 @@
-import os
-os.chdir("C:/Users/nyaku/OneDrive/Desktop/python")
 print('My name is')
 for i in range(5):
     print('Jimmy Five Times ' + str(i))
