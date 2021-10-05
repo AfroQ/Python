@@ -60,3 +60,63 @@ def main():
 
 if __name__ == "__main__":
   main()
+
+
+#More practice 
+def step(start, stop, step):
+    for i in range(start, stop, step):
+        print(i, end =' ')
+step(50, 19, -2)
+
+x = 50 
+while x > 19:
+    print(x, end= ' ')
+    x = x - 2
+
+# Reversed range
+
+for i in reversed(range(0, 101, 2)):
+  print (i, end=' ')
+
+#Fizzbuzz challenge
+
+for i in range(1, 101):
+    x = ''
+    if i % 4 == 0:
+        x = 'Go'
+      #  print(str(i) + 'Go', end= ' ')
+    if i % 5 == 0:
+        x = 'Figure'
+      #  print(str(i) + 'Figure', end= ' ')
+    if(i % 4 == 0 and i % 5 == 0):
+        x = 'GoFigure' 
+       # print("GoFigure", end =' ')
+
+    print(x, end= ' ')
+
+for i in range(1, 101):
+    if(i % 4 == 0 and i % 5 == 0):
+       print("GoFigure", end =' ')
+       continue
+    if i % 4 == 0:
+       print('Go', end= ' ')
+       continue
+    if i % 5 == 0:
+       print('Figure', end= ' ')
+       continue
+
+    #print(i, end= ' ') 
+
+for i in range(1, 101):
+    if(i % 4 == 0 and i % 5 == 0):
+       print("GoFigure", end =' ')
+       continue
+    elif i % 4 == 0:
+       print('Go', end= ' ')
+       continue
+    elif i % 5 == 0:
+       print('Figure', end= ' ')
+       continue
+
+    #print(i, end= ' ') 
+
