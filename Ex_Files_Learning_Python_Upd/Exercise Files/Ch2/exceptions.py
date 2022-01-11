@@ -1,4 +1,5 @@
-import sys # Gives more information about an error 
+import sys
+from typing import Type # Gives more information about an error 
 def inclusive_range(*args):
     numargs = len(args)
     start = 0
@@ -33,8 +34,12 @@ def main():
     else:
         print('There were no errors!')
     
-    for i in inclusive_range(25):
-        print(i, end = ' ', flush = True)
+    try:
+        for i in inclusive_range(25): # will take between 1 and 3 arguments and return error if more or less
+         print(i, end = ' ', flush = True)
+    except TypeError as e:
+        print(f'range error: {e}')
+        
     print()
 
 if __name__ == '__main__':main()
